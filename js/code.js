@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const playButton = document.getElementById('play');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
@@ -15,26 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const tracks = [
         {
-            "name": "Extasy",
-            "artist": "Myke Towers",
-            "path": "../src/Myke Towers - EXTASY.mp3",
-            "duration": "3:40",
-            "img":"../img/extasy-myke.jpeg"
-        },
-        {
             "name": "Lonely Night",
             "artist": "The Weeknd",
             "path": "../src/Lonely Night .mp3",
+            "duration": "3:20",
+            "img": "../img/lonely-night.jpeg"
+        },
+
+        {
+            "name": "Lady Hear Me Tonight",
+            "artist": "Modjo",
+            "path": "../src/Modjo - Lady (Hear Me Tonight).mp3",
             "duration": "3:40",
-            "img":"../img/lonely-night.jpeg"
+            "img": "../img/Lady-Hear-Me-Tonight.jpg"
         },
         {
-            "name": "Quizas,tal vez",
-            "artist": "Eladio Carrion",
-            "path": "../src/Eladio Carrión - Quizás, Tal Vez .mp3",
-            "duration": "3:40",
-            "img":"../img/quizas-tal-vez.jpg"
-        }
+            "name": "Baby I'm Yours",
+            "artist": "Breakbot",
+            "path": "../src/Baby I'm Yours.mp3",
+            "duration": "3:00",
+            "img": "../img/baby-im-yours.jpg"
+        },
+
     ];
 
     const audio = new Audio(tracks[currentTrack].path);
@@ -48,18 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.src = track.path;
     }
 
-    playButton.addEventListener('click', function() {
+    playButton.addEventListener('click', function () {
         if (isPlaying) {
-            playButton.innerHTML = '&#9654;'; // Play icon
+            playButton.innerHTML = '<i class="material-symbols-outlined" style="font-size: 70px;">play_circle</i>';
             audio.pause();
         } else {
-            playButton.innerHTML = '&#10074;&#10074;'; // Pause icon
+            playButton.innerHTML = '<i class="material-symbols-outlined" style="font-size: 70px;">pause_circle</i>';
             audio.play();
         }
         isPlaying = !isPlaying;
     });
-
-    prevButton.addEventListener('click', function() {
+    
+    prevButton.addEventListener('click', function () {
         currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
         loadTrack(currentTrack);
         if (isPlaying) {
@@ -67,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    nextButton.addEventListener('click', function() {
+    nextButton.addEventListener('click', function () {
         currentTrack = (currentTrack + 1) % tracks.length;
         loadTrack(currentTrack);
         if (isPlaying) {
@@ -75,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    volumeSlider.addEventListener('input', function() {
+    volumeSlider.addEventListener('input', function () {
         const volume = volumeSlider.value;
         volumeLabel.textContent = volume;
         audio.volume = volume / 100;

@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor de musica</title>
+    <link rel="shortcut icon" href="img/spotify-96.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
@@ -23,21 +24,20 @@
 </head>
 <div class="player-container">
     <div class="hover-album-art">
-        <img id="album-art" src="img/lonely-night.jpeg" alt="Album Art">
-
+        <img id="album-art" src="img/lonely-night.jpeg" alt="Album Art" class="album-art">
     </div>
     <h4 id="song-title"></h4>
     <h3 id="artist-name"></h3>
     <p id="song-duration"></p>
     <div class="music-controls">
         <div class="controls">
-            <button id="prev"><i class="material-symbols-outlined" style="font-size: 40px;">
+            <button id="prev"><i class="material-symbols-outlined" style="font-size: 65px;">
                     skip_previous</i>
             </button>
-            <button id="play"><i class="material-symbols-outlined" style="font-size: 70px;">
+            <button id="play"><i class="material-symbols-outlined" style="font-size: 75px;">
                     play_circle</i>
             </button>
-            <button id="next"><i class="material-symbols-outlined" style="font-size: 40px;">
+            <button id="next"><i class="material-symbols-outlined" style="font-size: 65px;">
                     skip_next</i>
             </button>
         </div>
@@ -48,10 +48,10 @@
                 <i class="material-symbols-outlined">volume_up</i>
             </div>
             <p id="volume-label">50</p>
-    </div>
+        </div>
 
-</div>
-<script src="js/code.js"></script>
-</body>
+    </div>
+    <script src="js/code.js"></script>
+    </body>
 
 </html>
