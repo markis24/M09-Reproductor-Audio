@@ -35,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "path": "src/Baby I'm Yours.mp3",
             "duration": "3:00",
             "img": "../img/baby-im-yours.jpg"
-        },
-
+        }
     ];
 
     const audio = new Audio(tracks[currentTrack].path);
@@ -49,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         songDuration.textContent = track.duration;
         audio.src = track.path;
     }
+
 
     playButton.addEventListener('click', function () {
         if (isPlaying) {
