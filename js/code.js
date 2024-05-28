@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             "name": "Lonely Night",
             "artist": "The Weeknd",
-            "path": "../src/Lonely Night .mp3",
+            "path": "src/Lonely Night .mp3",
             "duration": "3:20",
             "img": "../img/lonely-night.jpeg"
         },
@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             "name": "Lady Hear Me Tonight",
             "artist": "Modjo",
-            "path": "../src/Modjo - Lady (Hear Me Tonight).mp3",
+            "path": "src/Modjo - Lady (Hear Me Tonight).mp3",
             "duration": "3:40",
             "img": "../img/Lady-Hear-Me-Tonight.jpg"
         },
         {
             "name": "Baby I'm Yours",
             "artist": "Breakbot",
-            "path": "../src/Baby I'm Yours.mp3",
+            "path": "src/Baby I'm Yours.mp3",
             "duration": "3:00",
             "img": "../img/baby-im-yours.jpg"
         },
